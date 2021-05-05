@@ -72,6 +72,7 @@ h4 {
   font-weight: 800; 
 }
 
+
 h5 {
   font-family: 'Jost', sans-serif;
   margin-block-start: 0.2em;
@@ -93,6 +94,18 @@ h6{
   font-weight: 700; 
   padding-top: 2%;
   padding-bottom: 2%;
+}
+
+h7{
+  color: black;
+  font-size: 150%;
+  font-family: 'Jost', sans-serif;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  /*text-transform: uppercase;*/
+  font-weight: bold;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
 }
 
 p{
@@ -140,11 +153,23 @@ hr {
   padding-right: 10%;
   padding-bottom: 10%;
   */
-  width: 50%;
+  
   align-content: center;
-  margin: auto;
+ 
+  text-align: center;
 }
-
+.about-section{
+  padding: 0%;
+}
+ .about p{
+   color: black;
+   font-family: 'Jost', sans-serif;
+   font-size: .95em;
+   letter-spacing: .3px;
+   font-weight: 500;
+   margin-left: 0%;
+   margin-right: 0%;
+ }
 .rounded-circle {
   border-radius: 50% !important;
 }
@@ -177,7 +202,6 @@ hr {
 .timeline > li {
   position: relative;
   min-height: 50px;
-  margin-bottom: 50px;
 }
 .timeline > li:after, .timeline > li:before {
   display: table;
@@ -255,7 +279,6 @@ hr {
   }
   .timeline > li {
     min-height: 100px;
-    margin-bottom: 100px;
   }
   .timeline > li .timeline-panel {
     float: left;
