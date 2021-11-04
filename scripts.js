@@ -1,10 +1,10 @@
 function copyToClipboard() {
-  var copyText = "kmikulsky21@gmail.com";
-  navigator.clipboard.writeText(copyText);
-  alert("Copied the text: " + copyText);
+  var email = "kmikulsky21@gmail.com";
+  navigator.clipboard.writeText(email);
+  alert("Copied the text: " + email);
 
   var tooltip = document.getElementById("myTooltip");
-  tooltip.innerHTML = "Copied: " + copyText;
+  tooltip.innerHTML = "Copied: " + email;
 }
 
 function outFunc() {
