@@ -9,8 +9,8 @@ main {
   padding-bottom: 40rem;
 }
 section {
-  padding: 4rem;
-  margin: 0 0 2rem 0;
+  padding: 1rem 2rem 1rem 2rem;
+  margin: 0 0 0rem 0;
 }
 body {
   margin: 0px;
@@ -150,6 +150,7 @@ hr {
   text-shadow: black;
   text-emphasis-color: black;
 }
+
 .pageintro h4{
   color:#F8EEE7;
   text-align: center;
@@ -161,16 +162,20 @@ hr {
   background-color:  #6B6B6B ;
 }
 
+
+@media (min-width: 768px) {
 .bio-col-2{
   padding-bottom: 5%;
   padding-left:25%;
   padding-right: 25%;
 }
+}
+
 
 .bio p{
   color:white;
   font-family: inherit;
-  font-size: 1.4em;
+  font-size: 1.2em;
   letter-spacing: .3px;
   font-weight: 500;
   margin: 0px;
@@ -476,6 +481,8 @@ img {
   color: black;
 }
 
+
+@media (min-width: 600px) {
 .careerpt{
   padding-top: 5%;
   padding-bottom: 5%;
@@ -483,6 +490,7 @@ img {
   margin: auto;
   width: 50%;
   align-content: center;
+}
 }
 .careerpt p{
   letter-spacing: .3px;
@@ -499,11 +507,13 @@ img {
 .academic-block{
   background-color: white;
 }
+@media (min-width: 768px) {
 .acapt{
   padding-bottom: 5%;
   background-color: white;
   width: 50%;
   margin: auto;
+}
 }
 .acapt p{
   letter-spacing: .3px;
@@ -634,12 +644,12 @@ img {
 .projects{
   margin: auto;
   text-align: left;
-  
 }
 
 .projects p{
   margin-left: 0%;
 }
+@media (min-width: 768px) {
  .project-block{
   text-align: left;
   align-content: left; 
@@ -653,7 +663,7 @@ img {
   text-align: center;
   padding-right: 10%;
 }
-
+}
 .projects h5{
   color:#547980;
 }
