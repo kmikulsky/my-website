@@ -1,21 +1,13 @@
- let mainNavLinks = document.querySelectorAll("nav ul li a");
- let mainSections = document.querySelectorAll("main section");
+function copyToClipboard() {
+  var copyText = "kmikulsky21@gmail.com";
+  navigator.clipboard.writeText(copyText);
+  alert("Copied the text: " + copyText);
 
- let lastId;
- let cur = [];
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied: " + copyText;
+}
 
- window.addEventListener("scroll", event => {
-   let fromTop = window.scrollY;
-
-   mainNavLinks.forEach(link => {
-    let section = document.querySelector(link.hash);
-     if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
-       link.classList.add("current");
-     } else {
-       link.classList.remove("current");
-     }
-   });
- });
-
- function myFunction() {
-   document.getElementById("myDropdown").classList.toggle("show");}
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+}
